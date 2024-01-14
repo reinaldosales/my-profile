@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-MyProfile.Consumer.BrApi-c6374ab7-4071-4e60-8602-bbc2e6afe36a</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyProfile\MyProfile.Infra.Data\MyProfile.Infra.Data.csproj" />
+    <ProjectReference Include="..\MyProfile\MyProfile.Infra.IoC\MyProfile.Infra.IoC.csproj" />
+    <ProjectReference Include="..\MyProfile\MyProfile.Shared\MyProfile.Shared.csproj" />
+  </ItemGroup>
+</Project>
